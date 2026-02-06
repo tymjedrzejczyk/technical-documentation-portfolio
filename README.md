@@ -1,5 +1,15 @@
 # Technical Writing & Operations Documentation – Demo Portfolio
 
+## Table of Contents
+
+- [Purpose of this repository](#purpose-of-this-repository)
+- [What this portfolio demonstrates](#what-this-portfolio-demonstrates)
+- [Repository structure](#repository-structure)
+- [Tools & format](#tools--format)
+- [Notes](#notes)
+- [Contact](#contact)
+
+
 This repository contains selected examples of technical and operational documentation created for demonstration purposes.
 
 The focus of this portfolio is clarity, structure, and practical usability. All materials are written to reflect real-world documentation used by technical and operations teams in IT and SaaS environments.
