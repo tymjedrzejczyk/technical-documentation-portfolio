@@ -1,0 +1,96 @@
+# Post-Incident Review: Service Degradation
+
+## Summary
+
+On [date], a service degradation incident affected [service name], resulting in reduced performance and partial functionality for a subset of users.
+
+The incident was detected via [monitoring alert / user reports].
+Mitigation actions stabilized the service, and full functionality was restored without data loss.
+
+This document summarizes the incident, its impact, contributing factors, and identified follow-up actions.
+
+## Impact
+
+- Affected service(s):  
+- Impacted users: (e.g. percentage, regions, customer segment)
+- User-facing symptoms:
+  - increased response times,
+  - intermittent errors,
+  - degraded functionality.
+- Business impact:
+  - (e.g. SLA breach, customer support volume increase, internal disruption)
+
+## Timeline
+
+> All timestamps in [timezone]
+
+- **HH:MM** – Initial alert triggered.
+- **HH:MM** – Incident acknowledged by on-call engineer.
+- **HH:MM** – Incident owner assigned; communication channel established.
+- **HH:MM** – Initial investigation started.
+- **HH:MM** – Suspected cause identified.
+- **HH:MM** – Mitigation action applied.
+- **HH:MM** – Service metrics began stabilizing.
+- **HH:MM** – Service confirmed stable.
+- **HH:MM** – Incident closed.
+
+## Root Cause Analysis
+
+The primary root cause of the service degradation was:
+
+- [concise technical explanation of the failure]
+
+This resulted in:
+- [direct technical consequence],
+- [observable user impact].
+
+The issue was not caused by:
+- [explicitly ruled-out causes, if relevant].
+
+## Contributing Factors
+
+The following factors increased the impact or duration of the incident:
+
+- recent deployment or configuration change,
+- insufficient monitoring coverage or alert thresholds,
+- dependency instability,
+- delayed detection or escalation,
+- operational complexity.
+
+## Mitigation and Resolution
+
+The incident was mitigated by:
+
+- [specific mitigation action],
+- [supporting actions if applicable].
+
+These actions:
+- reduced load / errors,
+- stabilized service performance,
+- prevented further user impact.
+
+No permanent fix was deployed during the incident.
+
+## What Went Well
+
+- Monitoring detected the issue before a full outage occurred.
+- Incident ownership and communication were established quickly.
+- Mitigation actions were effective and low-risk.
+- Stakeholders were kept informed throughout the incident.
+
+## What Went Wrong
+
+- The issue was not detected earlier due to [gap].
+- Initial investigation focused on [incorrect assumption].
+- Monitoring or alerting did not fully reflect user impact.
+- Documentation or runbooks were incomplete or unclear.
+
+## Action Items
+
+| Action | Owner | Priority | Target Date |
+|------|-------|----------|-------------|
+| Improve monitoring for [metric/component] | | High | |
+| Review alert thresholds | | Medium | |
+| Update runbook documentation | | Medium | |
+| Implement permanent fix | | High | |
+
