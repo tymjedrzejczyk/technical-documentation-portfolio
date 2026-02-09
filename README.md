@@ -58,7 +58,8 @@ The documentation emphasizes:
 ## Notes
 
 All documentation in this repository is provided for demonstration purposes only. 
-The runbooks are based on real-world incident management practices and focus on clarity, repeatability, and operational usability
+The runbooks are based on real-world incident management practices and focus on clarity, repeatability, and operational usability.
+
 No proprietary, confidential, or production data is included.
 
 ---
