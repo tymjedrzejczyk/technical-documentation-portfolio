@@ -2,23 +2,26 @@
 
 ## Summary
 
-On [date], a service degradation incident affected [service name], resulting in reduced performance and partial functionality for a subset of users.
+On 02/06/2026, a service degradation incident affected Example Service, resulting in reduced performance and partial functionality for a subset of users.
 
-The incident was detected via [monitoring alert / user reports].
+The incident was detected via a Splunk monitoring alert and confirmed by an increase in user reports.
 Mitigation actions stabilized the service, and full functionality was restored without data loss.
 
 This document summarizes the incident, its impact, contributing factors, and identified follow-up actions.
 
 ## Impact
 
-- Affected service(s):  
-- Impacted users: (e.g. percentage, regions, customer segment)
+- Affected service: Example Service  
+- Impacted users: EMEA Example Service users
 - User-facing symptoms:
   - increased response times,
-  - intermittent errors,
+  - intermittent 5xx errors,
   - degraded functionality.
 - Business impact:
-  - (e.g. SLA breach, customer support volume increase, internal disruption)
+  - increased customer support volume, 
+  - risk of the SLA breach,
+  - risk of service discontinuity,
+  - internal disruption
 
 ## Timeline
 
