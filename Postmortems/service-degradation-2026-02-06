@@ -25,75 +25,76 @@ This document summarizes the incident, its impact, contributing factors, and ide
 
 ## Timeline
 
-> All timestamps in [timezone]
+> All timestamps in CET
 
-- **HH:MM** – Initial alert triggered.
-- **HH:MM** – Incident acknowledged by on-call engineer.
-- **HH:MM** – Incident owner assigned; communication channel established.
-- **HH:MM** – Initial investigation started.
-- **HH:MM** – Suspected cause identified.
-- **HH:MM** – Mitigation action applied.
-- **HH:MM** – Service metrics began stabilizing.
-- **HH:MM** – Service confirmed stable.
-- **HH:MM** – Incident closed.
+- **13:15** – Automated alert triggered by Splunk after performance metrics dropped below baseline thresholds.
+- **13:18** – Incident acknowledged by the on-call engineer.
+- **13:29** – Incident owner assigned and technical communication channel established.
+- **13:33** – Initial investigation started; monitoring data and logs reviewed.
+- **14:11** – Likely root cause identified as a failover configuration issue.
+- **14:20** – Mitigation action applied to correct the failover configuration.
+- **14:34** – Service metrics began stabilizing and error rates decreased.
+- **14:45** – Service functionality confirmed as stable through monitoring and health checks.
+- **15:05** – Incident formally marked as resolved.
+
 
 ## Root Cause Analysis
 
-The primary root cause of the service degradation was:
+The primary root cause of the service degradation was an asymmetric failover node configuration.
+A discrepancy in available bandwidth between the primary and failover nodes was identified.
 
-- [concise technical explanation of the failure]
+As a result, during maintenance of the primary node, traffic was downgraded instead of being smoothly redirected to the failover resources, leading to performance degradation under load.
 
-This resulted in:
-- [direct technical consequence],
-- [observable user impact].
+### Visible symptoms
 
-The issue was not caused by:
-- [explicitly ruled-out causes, if relevant].
+- significant performance degradation,
+- traffic bottlenecks resulting in increased 5xx error rates,
+- intermittent service unavailability for a subset of users.
 
 ## Contributing Factors
 
-The following factors increased the impact or duration of the incident:
+The following factors increased the impact and duration of the incident:
 
-- recent deployment or configuration change,
-- insufficient monitoring coverage or alert thresholds,
-- dependency instability,
-- delayed detection or escalation,
-- operational complexity.
+- a recent failover configuration change,
+- encryption enabled on the client protocol on the secondary node, which was not configured to handle the increased traffic volume,
+- inadequate bandwidth allocation on the failover node.
 
 ## Mitigation and Resolution
 
-The incident was mitigated by:
+The incident was mitigated by applying a targeted failover configuration adjustment.
 
-- [specific mitigation action],
-- [supporting actions if applicable].
+Mitigation actions included:
+- temporarily correcting the failover traffic routing to limit load on the secondary node,
+- adjusting bandwidth allocation to reduce traffic bottlenecks,
+- pausing further configuration changes during the incident.
 
-These actions:
-- reduced load / errors,
-- stabilized service performance,
-- prevented further user impact.
+These actions resulted in:
+- reduced error rates and request latency,
+- stabilization of overall service performance,
+- prevention of further degradation during peak traffic.
 
 No permanent fix was deployed during the incident.
+A full review of the failover configuration and capacity planning was scheduled as a follow-up action.
 
 ## What Went Well
 
 - Monitoring detected the issue before a full outage occurred.
 - Incident ownership and communication were established quickly.
-- Mitigation actions were effective and low-risk.
+- The configuration issue was identified efficiently, allowing mitigation actions to remain effective and low-risk.
 - Stakeholders were kept informed throughout the incident.
 
 ## What Went Wrong
 
-- The issue was not detected earlier due to [gap].
-- Initial investigation focused on [incorrect assumption].
-- Monitoring or alerting did not fully reflect user impact.
-- Documentation or runbooks were incomplete or unclear.
+- The misconfiguration was not detected earlier due to insufficient pre-change validation and testing.
+- Initial investigation focused on the primary node before its maintenance status was fully confirmed.
+- Maintenance communication lacked sufficient detail to immediately correlate it with the observed service behavior.
 
 ## Action Items
 
 | Action | Owner | Priority | Target Date |
 |------|-------|----------|-------------|
-| Improve monitoring for [metric/component] | | High | |
-| Review alert thresholds | | Medium | |
-| Update runbook documentation | | Medium | |
-| Implement permanent fix | | High | |
-
+| Review alert thresholds | Security | Medium | xx-xx-2026 |
+| Update runbook documentation | Technical Documentation | Medium |xx-xx-2026 |
+| Allocation of failover bandwidth to match the main node | Server | High |xx-xx-2026 |
+| Testing of the failover bandwidth to match the main node | Server | High |xx-xx-2026 |
+ 
