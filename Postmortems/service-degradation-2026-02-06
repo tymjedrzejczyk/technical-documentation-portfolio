@@ -93,8 +93,7 @@ A full review of the failover configuration and capacity planning was scheduled 
 
 | Action | Owner | Priority | Target Date |
 |------|-------|----------|-------------|
-| Review alert thresholds | Security | Medium | xx-xx-2026 |
-| Update runbook documentation | Technical Documentation | Medium |xx-xx-2026 |
-| Allocation of failover bandwidth to match the main node | Server | High |xx-xx-2026 |
-| Testing of the failover bandwidth to match the main node | Server | High |xx-xx-2026 |
- 
+| Review and adjust alert thresholds related to failover performance | Security | Medium | xx-xx-2026 |
+| Update service degradation runbook documentation | Technical Documentation | Medium | xx-xx-2026 |
+| Align failover node bandwidth allocation with the primary node | Server | High | xx-xx-2026 |
+| Validate failover bandwidth capacity through load and failover testing | Server | High | xx-xx-2026 |
