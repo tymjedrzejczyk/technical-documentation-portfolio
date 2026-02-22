@@ -1,5 +1,5 @@
-#Editorial Case Study – Scientific Content Restructuring (AKARI Mission)
-##Context
+# Editorial Case Study – Scientific Content Restructuring (AKARI Mission)
+## Context
 
 This case study presents an editorial restructuring exercise based on a publicly available mission description of the AKARI infrared astronomy satellite.
 
@@ -7,7 +7,7 @@ The original text contained accurate and valuable scientific information but lac
 
 The goal of this exercise was not to rewrite the scientific content, but to improve structure, clarity, scannability, and logical progression while preserving factual integrity.
 
-##Objective
+## Objective
 
 The objective of this editorial revision was to:
 
@@ -25,8 +25,8 @@ Preserve 100% factual and scientific accuracy
 
 No new information was introduced. All scientific parameters, dates, and institutional roles were retained from the source material.
 
-##Editorial Approach
-###1. Structural Reorganization
+## Editorial Approach
+### 1. Structural Reorganization
 
 The original content was reorganized into clearly defined logical sections:
 
@@ -44,7 +44,7 @@ International collaboration and institutional roles
 
 This structure reflects the mission lifecycle and supports non-linear reading, which is essential for online publishing.
 
-###2. Clarity and Readability
+### 2. Clarity and Readability
 
 Long compound sentences were simplified.
 
@@ -56,13 +56,13 @@ Redundant contextual information was removed where possible.
 
 The tone remains institutional and scientific, but more controlled and accessible.
 
-###3. Terminology Consistency
+### 3. Terminology Consistency
 
 Scientific terminology was standardized to ensure internal consistency and alignment with common usage in scientific communication.
 
 Capitalization, unit formatting (µm, K, km), and naming conventions were unified.
 
-###4. Web Discoverability Considerations
+### 4. Web Discoverability Considerations
 
 Key mission parameters and essential identifiers were positioned early in the text to support:
 
@@ -76,7 +76,7 @@ Faster contextual recognition
 
 The structure supports both human readers and machine-based content processing.
 
-###5. Factual Integrity
+### 5. Factual Integrity
 
 The revised text maintains full factual accuracy:
 
@@ -90,7 +90,7 @@ No interpretation or additional commentary introduced
 
 This exercise focused exclusively on structural and editorial refinement.
 
-##Skills Demonstrated
+## Skills Demonstrated
 
 Scientific content editing
 
@@ -104,7 +104,7 @@ Audience-aware simplification
 
 Editorial reasoning documentation
 
-##Files Included
+## Files Included
 
 original_excerpt.md – Selected fragment of the original text
 
