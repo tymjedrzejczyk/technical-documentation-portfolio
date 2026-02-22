@@ -1,0 +1,113 @@
+#Editorial Case Study – Scientific Content Restructuring (AKARI Mission)
+##Context
+
+This case study presents an editorial restructuring exercise based on a publicly available mission description of the AKARI infrared astronomy satellite.
+
+The original text contained accurate and valuable scientific information but lacked clear structural segmentation and logical flow for web-based consumption.
+
+The goal of this exercise was not to rewrite the scientific content, but to improve structure, clarity, scannability, and logical progression while preserving factual integrity.
+
+##Objective
+
+The objective of this editorial revision was to:
+
+Improve structural organization of the content
+
+Enhance readability for an educated non-specialist audience
+
+Standardize terminology
+
+Improve logical flow of mission lifecycle description
+
+Increase web scannability
+
+Preserve 100% factual and scientific accuracy
+
+No new information was introduced. All scientific parameters, dates, and institutional roles were retained from the source material.
+
+##Editorial Approach
+###1. Structural Reorganization
+
+The original content was reorganized into clearly defined logical sections:
+
+Mission identity and objectives
+
+Technical specifications and orbit
+
+Operational phase and mission lifetime
+
+Scientific achievements
+
+Post-Helium phase
+
+International collaboration and institutional roles
+
+This structure reflects the mission lifecycle and supports non-linear reading, which is essential for online publishing.
+
+###2. Clarity and Readability
+
+Long compound sentences were simplified.
+
+Repetitive phrasing was reduced.
+
+Terminology was unified across the text.
+
+Redundant contextual information was removed where possible.
+
+The tone remains institutional and scientific, but more controlled and accessible.
+
+###3. Terminology Consistency
+
+Scientific terminology was standardized to ensure internal consistency and alignment with common usage in scientific communication.
+
+Capitalization, unit formatting (µm, K, km), and naming conventions were unified.
+
+###4. Web Discoverability Considerations
+
+Key mission parameters and essential identifiers were positioned early in the text to support:
+
+SEO discoverability
+
+AI-assisted search indexing
+
+Improved snippet generation
+
+Faster contextual recognition
+
+The structure supports both human readers and machine-based content processing.
+
+###5. Factual Integrity
+
+The revised text maintains full factual accuracy:
+
+All dates and mission milestones preserved
+
+All wavelength ranges and technical specifications preserved
+
+All institutional roles and collaborations preserved
+
+No interpretation or additional commentary introduced
+
+This exercise focused exclusively on structural and editorial refinement.
+
+##Skills Demonstrated
+
+Scientific content editing
+
+Structural information design
+
+Logical sequencing of complex material
+
+Terminology standardization
+
+Audience-aware simplification
+
+Editorial reasoning documentation
+
+##Files Included
+
+original_excerpt.md – Selected fragment of the original text
+
+revised_version.md – Structured and edited version
+
+editorial_rationale.md – Detailed explanation of editorial decisions
